@@ -1,0 +1,260 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+body{
+    margin:0;
+    background-color: #f2f2f2;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px 40px 80px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 4px 30px -2px rgba(0, 0, 0, 0.2);
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    width: 30%;
+}
+
+.navbar{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar > .nav-item{
+    margin: 0.2rem 2rem;
+}
+
+.nav-item > .nav-link{
+    text-decoration: none;
+    color:black;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.nav-item > .nav-link:hover{
+    text-decoration: underline black;
+}
+
+.bonus-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonus-image{
+    padding-right: 10px;
+}
+
+.shopping-section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.shop-container{
+    display: grid;
+    grid-template-columns: 40vh 40vh  40vh;
+    grid-template-rows: 40vh;
+    gap: 20vh;
+}
+
+.product-box{
+    position: relative;
+}
+
+.product-image-box{
+    position: relative;
+    width:40vh;
+    height: 40vh;
+}
+
+.product-image{
+    width:40vh;
+    height: 40vh;
+    object-fit: contain;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;;
+}
+
+.button-view{
+    background-color: white;
+    border-radius: 5px;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-view:hover{
+    background-color: #ed7b0e;
+    color: white;
+}
+
+
+.product-focus{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.product-image-box:hover .product-focus{
+    opacity: 100%;
+}
+
+.product-name{
+    margin:10xp 0;
+    font-size: 20px;
+}
+
+.product-price{
+    margin:0;
+}
+
+
+.social-media-section{
+    margin: 7rem 0;
+    padding:0 230px;
+}
+
+.social-media-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link{
+    text-decoration: underline;
+    color:black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.social-link:hover{
+    text-decoration: none;
+}
+
+footer{
+    border-top: 2px solid #2C2727;
+    margin-top: 10rem;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0  70px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.social-icons{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quick-links{
+    flex:3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+
+.quick-link{
+    margin-right: 40px;
+    text-decoration: none;
+    color:black;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.quick-link:hover{
+    text-decoration: underline;
+}
+
+
+.footer-copyright{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-section{
+    width: 100%;
+    padding: 70px;
+}
+
+.image-container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container > img{    
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.image-text{
+    top:30%;
+    left:30%;
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+}
