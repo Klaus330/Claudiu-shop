@@ -348,3 +348,56 @@ footer{
     width: 1240px;
     margin:0 auto;
 }
+
+/* About page */
+
+.about-section{
+    padding: 80px;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-image{
+    margin-right: 40px;
+    width: 40%;
+    height: 100%;
+}
+
+.about-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-description{
+    width: 60%;
+}
+
+.author-name{
+    margin-top:0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Contact page */
+
+.contact-section{
+    display:flex;
+    padding: 90px;
+    padding-bottom: 0;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.contact-info p{
+    font-size: 14px;
+}
+
+.contact-link:hover{
+    font-weight: bold;
+}
