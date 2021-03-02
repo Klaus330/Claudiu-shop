@@ -1,4 +1,4 @@
-
+/*  General */
 *{
     box-sizing: border-box;
     font-family: 'Roboto', Geneva, Tahoma, sans-serif;
@@ -72,7 +72,7 @@ header{
 .bonus-image{
     padding-right: 10px;
 }
-
+/* Home Page */
 .shopping-section{
     position: relative;
     width: 100%;
@@ -242,19 +242,109 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-.image-container > img{    
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
+    background: url('../img/image.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30vh;
 }
 
 .image-text{
-    top:30%;
-    left:30%;
-    position: absolute;
     color: white;
     font-size: 70px;
     font-weight: 800;
+}
+
+/* Product page */
+
+.product-section{
+    display:flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.product-image-section{
+   width: 500px;
+   height: 500px;
+   padding: 40px;
+   margin-right: 40px;
+}
+
+.product-info-body{
+    height: 100%;
+    padding: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.product-info-body > .product-name {
+    margin-bottom:10px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.product-info-body .product-description{
+    width:90%;
+    margin: 10px 0 30px 0;
+    font-size: 14px;   
+}
+
+.product-price-section {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
+}
+
+.product-price-strike{
+    text-decoration: line-through;
+    margin-right: 30px;
+    color:#c4c4c4;
+    font-size: 20px;
+    font-weight: 300    ;
+}
+
+.product-price-section .product-price{
+    color:#9a253d;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.specifications-section{
+    margin-top:20px;
+    padding: 60px;
+    padding-bottom: 0;
+}
+
+.spec-table{
+    margin: 0 0 10px;
+    font-size: 18px;
+    display: table;
+    width: 70%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: grey;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing:0;  
+    border: 1px solid rgba(0, 0, 0, 0.1);  
+}
+
+
+.spec-table td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding:15px;
+}
+
+.spec-table td:nth-child(2){
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    width: 1240px;
+    margin:0 auto;
 }
